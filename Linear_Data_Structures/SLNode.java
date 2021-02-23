@@ -1,8 +1,18 @@
 public class SLNode{
 	// define SL Attributes here
-	public SLNode(){
-	
+	public int info;
+	public SLNode next;
+	//
+	public SLNode(int info){
+		this.info = info;
+		this.next = null;
 	}
+	//
+	public SLNode(int info, SLNode next){
+		this.info = info;
+		this.next = next;
+	}
+
 	//define getters here
 	//define setters here
 }
