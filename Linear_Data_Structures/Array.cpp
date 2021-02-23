@@ -24,11 +24,7 @@ int main(){
 	}
 	cout<<"However, when it comes to integer array one element will take a memory space of 32 bit which is equal to 4 word size"<<endl;
 	for( int i=0;i<5;i++){
-		cout<<"Element "<<(i+1)<<" of phone_number is stored at memory location of "<<&phone_number[i]<<endl;}
-	//cout<<(void*)&x[0]<<endl;
-	//cout<<(void*)&x[1]<<endl;
-	//cout<<&x[2]<<endl;
-	//cout<<&x[3]<<endl;
-	//cout<<&*(x+4)<<endl;
+		cout<<"Element "<<(i+1)<<" of phone_number is stored at memory location of "<<&phone_number[i]<<endl;
+	}
 	return 0;
 }
