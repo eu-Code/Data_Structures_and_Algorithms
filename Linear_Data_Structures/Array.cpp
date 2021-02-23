@@ -17,6 +17,10 @@ int main(){
 	for(int i =0;i<6;i++){
 		cout<<"Element "<<(i+1)<<" is "<<*(name+i)<<endl;
 	}
+	//let us see how arrays are stored in a sequential manner
+	for( int i=0;i<5;i++){
+		cout<<"Element "<<(i+1)<<" of name is stored at memory location of "<<(void*)&name[i]<<endl;
+	}
 	//cout<<(void*)&x[0]<<endl;
 	//cout<<(void*)&x[1]<<endl;
 	//cout<<&x[2]<<endl;
