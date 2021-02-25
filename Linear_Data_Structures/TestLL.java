@@ -20,5 +20,7 @@ public class TestLL{
 		linkedList.printList();
 		System.out.println(linkedList.search(5));
 		System.out.println(linkedList.search(3));
+		System.out.println("Deleed node contains info of "+linkedList.remove(1));
+		linkedList.printList();
 	}
 }

@@ -41,8 +41,22 @@ public class LinkedList{
 		return info;
 	}
 	// remove from anywhere
-	public void remove(SLNode node){
-		// write your implementation here
+	public int remove(int info){
+		if(!this.isEmpty()){
+			if(this.head==this.tail&&info==this.head.info) this.head=this.tail=null;
+			else if(info==this.head.info) this.head = this.head.next;
+			else {
+				SLNode pred = this.head;
+				SLNode tmp = this.head.next;
+				for(;tmp!=null&&tmp.info!=info;pred=pred.next,tmp=tmp.next);
+				if(tmp!=null){
+					pred.next = tmp.next;
+					if(tmp==this.tail) this.tail=pred;
+				}
+			}
+			return info;
+		}
+		return -1;
 	}
 	// search node
 	public boolean search(int info){
@@ -52,13 +66,20 @@ public class LinkedList{
 	}
 	//print list
 	public void printList(){
-		// write your implementation here
 		for(SLNode temp = this.head;temp!=null;temp=temp.next)
 			System.out.println(temp.info);
 	}
 	//
 	public boolean isEmpty(){
 		return this.head==null;
+	}
+
+	public int  getHead(){
+		return this.head.info;
+	}
+
+	public int getTail(){
+		return this.tail.info;
 	}
 	
 	
