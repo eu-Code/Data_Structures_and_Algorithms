@@ -10,6 +10,13 @@ public class TestLL{
 		linkedList.addToTail(3);
 		linkedList.addToTail(5);
 		linkedList.addToHead(7);
+		System.out.println("Before deleting the node");
+		linkedList.printList();
+		System.out.println("Deleted node contains info of "+linkedList.removeFromHead());
+		System.out.println("After deleting the head");
+		linkedList.printList();
+		System.out.println("Deleted node contains info of "+linkedList.removeFromTail());
+		System.out.println("After deleting the tail");
 		linkedList.printList();
 	}
 }

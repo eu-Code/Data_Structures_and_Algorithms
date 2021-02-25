@@ -22,12 +22,25 @@ public class LinkedList{
 		else this.head=this.tail= new SLNode(el,null);
 	}
 	// remove from head
-	public void removeFromHead(){
-		// write your implementation here
+	public int removeFromHead(){
+		int info = this.head.info;
+		if(this.head==this.tail) this.head = this.tail = null;
+		else this.head = this.head.next;
+		return info;
 	}
 	// remove from tail
-	public void removeFromTail(){
-		// write your implementation here
+	public int removeFromTail(){
+		int info = this.tail.info;
+		if(this.head == this.tail) this.head=this.tail=null;
+		else{
+			SLNode tmp;
+			System.out.println(this.head.next.info);
+			for(tmp=this.head;tmp.next!=this.tail;tmp=tmp.next){
+				this.tail = tmp;
+				this.tail.next = null;
+			}
+		}
+		return info;
 	}
 	// remove from anywhere
 	public void remove(SLNode node){
