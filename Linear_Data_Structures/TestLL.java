@@ -18,5 +18,7 @@ public class TestLL{
 		System.out.println("Deleted node contains info of "+linkedList.removeFromTail());
 		System.out.println("After deleting the tail");
 		linkedList.printList();
+		System.out.println(linkedList.search(5));
+		System.out.println(linkedList.search(3));
 	}
 }

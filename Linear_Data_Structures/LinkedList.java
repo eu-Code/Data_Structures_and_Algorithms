@@ -45,8 +45,10 @@ public class LinkedList{
 		// write your implementation here
 	}
 	// search node
-	public void search(SLNode node){
-		// write your implementation here
+	public boolean search(int info){
+		SLNode tmp = this.head;
+		for(;tmp!=null&&tmp.info!=info;tmp=tmp.next);
+		return tmp!=null;
 	}
 	//print list
 	public void printList(){
