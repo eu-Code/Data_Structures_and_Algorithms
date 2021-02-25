@@ -33,12 +33,10 @@ public class LinkedList{
 		int info = this.tail.info;
 		if(this.head == this.tail) this.head=this.tail=null;
 		else{
-			SLNode tmp;
-			System.out.println(this.head.next.info);
-			for(tmp=this.head;tmp.next!=this.tail;tmp=tmp.next){
-				this.tail = tmp;
-				this.tail.next = null;
-			}
+			SLNode tmp= this.head;
+			for(;tmp.next!=this.tail;tmp=tmp.next);
+			this.tail = tmp;
+			this.tail.next = null;
 		}
 		return info;
 	}
