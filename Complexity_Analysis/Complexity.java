@@ -31,7 +31,7 @@ public class Complexity{
 		// initializing sum to 0
 		int sum =0;
 		long start = System.currentTimeMillis();
-		for(int i=0;i<1000;i++){
+		for(int i=0;int sum=0;i<1000;i++){
 			for(int j=0;j<1000;j++){
 				sum+=i;
 			}

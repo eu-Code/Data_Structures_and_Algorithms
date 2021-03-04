@@ -13,6 +13,4 @@ public class SLNode{
 		this.next = next;
 	}
 
-	//define getters here
-	//define setters here
 }

@@ -1,11 +1,15 @@
 public class TestLL{
 	public static void main(String[] args){
 		LinkedList linkedList = new LinkedList();
-		//System.out.println(linkedList.isEmpty());
-		linkedList.addToTail(1);
-		linkedList.addToHead(4);
-		//linkedList.printList();
+		System.out.println("Before adding elements");
 		System.out.println(linkedList.isEmpty());
+		System.out.println("After adding 1");
+		linkedList.addToTail(1);
+		linkedList.printList();
+		System.out.println("After adding 4 to the head");
+		linkedList.addToHead(4);
+		linkedList.printList();
+		System.out.println("Is list empty "+linkedList.isEmpty());
 		//linkedList.printList();
 		linkedList.addToTail(3);
 		linkedList.addToTail(5);
