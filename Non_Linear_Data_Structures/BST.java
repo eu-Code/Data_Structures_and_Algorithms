@@ -30,4 +30,28 @@ public class BST{
 		else if (prev.key<el) prev.right = new BSTNode(el);
 		else prev.left = new BSTNode(el);
 	}
+
+	public void preorder(BSTNode p){
+		if(p!=null){
+			this.visit(p);
+			preorder(p.left);
+			preorder(p.right);
+		}
+	}
+
+	public void inorder(BSTNode p){
+		if(p!=null){
+			inorder(p.left);
+			this.visit(p);
+			inorder(p.right);
+		}
+	}
+
+	public void postorder(BSTNode p){
+		if(p!=null){
+			postorder(p.left);
+			postorder(p.right);
+			this.visit(p);
+		}
+	}
 }
