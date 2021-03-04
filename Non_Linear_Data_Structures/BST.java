@@ -54,4 +54,17 @@ public class BST{
 			this.visit(p);
 		}
 	}
+	public void  breadthFirst(){
+		BSTNode p = this.root;
+		LLQueue queue = new LLQueue();
+		if(p!=null){
+			queue.enqueue(p);
+			while(!queue.isEmpty()){
+				p = (BSTNode)queue.dequeue();
+				this.visit(p);
+				if(p.left!=null) queue.enqueue(p.left);
+				if (p.right!=null) queue.enqueue(p.right);
+			}
+		}
+	}
 }

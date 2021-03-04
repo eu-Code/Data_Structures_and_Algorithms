@@ -13,5 +13,7 @@ public class TestBST{
 		bst.inorder(bst.root);
 		System.out.println("Postorder");
 		bst.postorder(bst.root);
+		System.out.println("Breadth First");
+		bst.breadthFirst();
 	}
 }
