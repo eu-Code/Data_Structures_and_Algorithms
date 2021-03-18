@@ -4,6 +4,8 @@ public class TestBST{
 		bst.insert(3);
 		bst.insert(2);
 		bst.insert(5);
+		bst.insert(1);
+		bst.insert(4);
 		System.out.println("Searching for a specific key");
 		System.out.println(bst.search(bst.root,2).key);
 		//pre order traversing
